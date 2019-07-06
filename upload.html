@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>QiniuWebUpload</title>
+		<title></title>
 		<style type="text/css">
 			body{
 				position: relative;
-				background-image: url('https://box.poi.tech/ImgHub/FLOWER.jpg');
+				background-image: url(img/FLOWER.jpg);
 			}
 			.center{
 				width: 600px;
@@ -71,6 +71,9 @@
 				height: 100%;
 				line-height: 50px;
 			}
+			.hidden{
+				display: none;
+			}
 		</style>
 	</head>
 	<body>
@@ -78,21 +81,22 @@
 			<div class="title">
 				<h1>7️⃣🐮☁✔🐘💾🚀</h1>
 			</div>
-			<div>
-				<form action="" method="post" name="upload_form">
-				<input type="file" name="file" value="" id="file">
+			<form action="" method="post" name="upload_form">
+				<div>
+					<input type="file" name="file" value="" id="file">
 					<button class="upload" type="button">
 						<label class="button" for="file">选择文件</label>
 					</button>
-			</div>
-		    <div class="info">
-				<input class="status" type="text" name="info" value="请上传文件"><br>
-				<input class="url" type="text" name="file_url" value="">
-				<input type="hidden" name="key" value="" id=""> <br/>
-    			<input type="hidden" name="token" value=""> <br/>
-				</form>
-				<script type="text/javascript" src="./main.js"></script>
-			</div>
+				</div>
+				<div class="info">
+					<input class="status" type="text" name="info" value="请上传文件"><br>
+					<input  class="url" type="text" name="file_url" value="">
+					<div class="hidden">
+						<input type="hidden" name="key" value="" id="">
+						<input type="hidden" name="token" value="">
+					</div>
+			</form>
+			<script type="text/javascript" src="./main.js"></script>
 		</div>
 	</body>
 </html>
